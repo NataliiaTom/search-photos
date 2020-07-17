@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 30vh;
+  flex-direction: column;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
+}
+
+header h2 {
+  padding: 2rem;
+}
+
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+
+.search-form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+
+  border: 2px solid rgb(50, 49, 105);
+}
+.search-form button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: rgb(50, 49, 105);
+  color: white;
+  cursor: pointer;
+}
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+}
+.gallery-info a {
+  color: grey;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 3rem;
+  row-gap: 5rem;
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 30vh;
+}
+
+.more {
+  color: white;
+  background: rgb(50, 49, 105);
+  border: none;
+  font-size: 1.5rem;
+}
+.gallery-img {
+  overflow: hidden;
+}
